@@ -1,0 +1,414 @@
+
+@media(max-width:959px){
+
+    .sidebar {
+        display: none;
+      }
+      .header1 {
+        display: none;
+      }
+      .heading1 {
+        display: none;
+      }
+      .aboutText1 {
+        display: none;
+      }
+      .cardMenu1 {
+        display: none;
+      }
+
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      background-color: #fafafa;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+    }
+    
+    main {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 3rem 8rem 26rem 8.5rem;
+    }
+    
+    header {
+      text-align: center;
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      grid-row: 1/2;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-style: "Roboto", sans-serif;
+    }
+    
+    .nav-toggle {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+    }
+    
+    .nav-toggle:focus ~ .nav-toggle-label {
+      outline: 3px solid rgba(rgb(230, 173, 173), 0.75);
+    }
+    
+    .nav-toggle-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 1em;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 2.5rem;
+    }
+    
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+      display: block;
+      background: rgb(255, 10, 10);
+      height: 2px;
+      width: 2em;
+      border-radius: 2px;
+      position: relative;
+    }
+    
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+      content: "";
+      position: absolute;
+    }
+    
+    .nav-toggle-label span::before {
+      bottom: 7px;
+      width: 1.5em;
+      height: 2px;
+    }
+    
+    .nav-toggle-label span::after {
+      top: 7px;
+      width: 1em;
+      height: 2px;
+    }
+    
+    nav {
+      position: absolute;
+      text-align: left;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: transform 400ms ease-in-out;
+      color: black;
+      background-color: #fafafa;
+    }
+    
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    nav li {
+      margin-bottom: 1em;
+      margin-left: 1em;
+    }
+    
+    nav a {
+      color: rgb(255, 23, 23);
+      text-decoration: none;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity 150ms ease-in-out;
+    }
+    
+    nav a:hover {
+      color: #000;
+    }
+    
+    .nav-toggle:checked ~ nav {
+      transform: scale(1, 1);
+    }
+    
+    .nav-toggle:checked ~ nav a {
+      opacity: 1;
+      transition: opacity 250ms ease-in-out 250ms;
+    }
+    
+    .cart {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      color: red;
+      right: 2.5rem;
+      top: 0;
+    
+      margin-right: 0px;
+      height: 100%;
+      font-size: 1.5rem;
+    }
+    
+    .heading {
+      background-color: #fafafa;
+    
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      color: black;
+      font-size: 2.2rem;
+      font-family: "Orelega One", sans-serif;
+      text-align: left;
+      grid-row: 2/3;
+      margin-left: 2rem;
+      margin-top: 0;
+    }
+    
+    .cardMenu {
+      background-color: #fafafa;
+      grid-row: 3/4;
+      padding: 0;
+    }
+    
+    #inner-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .card {
+      width: 8.275rem;
+      height: 10.625rem;
+      background-color: #ffffff;
+      border-radius: 0.9375rem;
+      box-shadow: grey;
+      color: black;
+      font-weight: 500;
+      font-size: 0.625rem;
+      box-shadow: 1.25rem 1.25rem 2.5rem grey;
+      margin-left: 2rem;
+      margin-bottom: 30px;
+    }
+    
+    .cardImage {
+      margin: 0.9375rem;
+      width: 6.25rem;
+      height: 6.25rem;
+      border-radius: 5.625rem;
+    }
+    
+    .cardText {
+      text-align: center;
+      margin-bottom: 0.625rem;
+      margin-top: 0.3125rem;
+      font-size: 0.8rem;
+    }
+    
+    .text {
+      background-color: #fafafa;
+    
+      color: #b0b0b0;
+      font-size: 1rem;
+      grid-row: 4/5;
+      margin-left: 2.5rem;
+      margin-top: 0;
+    }
+    #line{
+        color: red;
+        height: 2px;
+    }
+    
+}
+
+
+
+@media (min-width: 960px) {
+  .header {
+    display: none;
+  }
+  .heading {
+    display: none;
+  }
+  .cardMenu {
+    display: none;
+  }
+  .text {
+    display: none;
+  }
+  .cardMenu2 {
+    display: none;
+  }
+
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: Alabaster;
+    font-family: "Roboto", sans-serif;
+    background-color: #fafafa;
+    height: auto;
+  }
+
+  .maine1 {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 20% 50% 1fr;
+    grid-template-rows: 20% 30% 50%;
+  }
+
+  .header1 {
+    background-color: #fafafa;
+
+    padding-left: 60px;
+    padding-top: 40px;
+    font-size: 2.5rem;
+    grid-column: 2/-1;
+    color: black;
+    font-weight: 500;
+
+    font-family: "Orelega One", sans-serif;
+  }
+
+  .sidebar {
+    background-color: #fafafa;
+
+    grid-row: 1/4;
+    color: #b0b0b0;
+  }
+
+  .companyTag {
+    padding-left: 60px;
+    padding-top: 10px;
+    font-size: 3rem;
+    grid-column: 2/-1;
+    color: black;
+    font-weight: 500;
+    margin-bottom:55px;
+    font-family: "Orelega One", sans-serif;
+  }
+
+  .navList {
+    list-style-type: none;
+    margin: 30px;
+    padding: 0;
+    font-size: 1.25rem;
+    margin-left: 0px;
+  }
+  .navListItem {
+    margin-left: 60px;
+    margin-bottom: 45px;
+  }
+
+  .navListItem a{
+    
+    color: #b0b0b0;
+        text-decoration: none;
+    }
+    
+    .navListItem a:hover {
+    
+        text-decoration:line-through; 
+        cursor:pointer;  
+    }
+
+  .btncart {
+    color: white;
+    background-color: Red;
+    font-size: 1.25rem;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 70px;
+    margin-top: 50px;
+    border: none;
+  }
+
+  .heading1 {
+    background-color: #fafafa;
+
+    color: black;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    font-family: "Orelega One", sans-serif;
+    padding-top: 10px;
+  }
+
+  .aboutText1 {
+    background-color: #fafafa;
+
+    color: #b0b0b0;
+    font-size: 1rem;
+  }
+
+  .cardMenu1 {
+    background-color: #fafafa;
+
+    grid-column: 2/-1;
+  }
+
+  .carddiv {
+    display: flex;
+  }
+
+  .card {
+    width: 220px;
+    height: 280px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: grey;
+    color: black;
+    font-weight: 500;
+    font-size: 0.625rem;
+    box-shadow: 20px 20px 50px grey;
+    margin: 15px;
+  }
+
+  .cardImage {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right:20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+  }
+
+  .cardText {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .sidebar {
+    display: block;
+  }
+  .header1 {
+    display: block;
+  }
+  .heading1 {
+    display: block;
+  }
+  .aboutText1 {
+    display: block;
+  }
+  .cardMenu1 {
+    display: block;
+  }
+  
+
+  
+        
+
+
+}
